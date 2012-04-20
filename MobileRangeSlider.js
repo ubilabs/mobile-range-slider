@@ -144,7 +144,7 @@ if (!Function.prototype.bind) {
     }
     
     var 
-      knobWidth = this.knob.offsetWidth - 2,
+      knobWidth = this.knob.offsetWidth,
       trackWidth = this.track.offsetWidth,
       range = this.options.max - this.options.min,
       width = trackWidth - knobWidth,
@@ -169,7 +169,7 @@ if (!Function.prototype.bind) {
   MobileRangeSlider.prototype.moveKnobTo = function(pos) {
 
     var element,
-      knobWidth = this.knob.offsetWidth - 2,
+      knobWidth = this.knob.offsetWidth,
       trackWidth = this.track.offsetWidth,
       width = trackWidth - knobWidth,
       range = this.options.max - this.options.min,
