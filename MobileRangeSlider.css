@@ -1,0 +1,55 @@
+/*
+ *
+ * Find more about this template by visiting
+ * http://miniapps.co.uk/
+ *
+ * Copyright (c) 2010 Alex Gibson, http://miniapps.co.uk/
+ * Released under MIT license
+ *
+ */
+
+.slider {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	height: 50px;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	-webkit-touch-callout: none;
+}
+
+.track {
+	position: absolute;
+	top: 24px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 2px;
+	background-color: gray;
+	z-index: -1;
+}
+
+.knob {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	background-color: black;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background: rgb(253,253,253);
+	background: -moz-linear-gradient(top, rgb(253,253,253), rgb(190,190,190));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(253,253,253)), to(rgb(190,190,190)));
+	background: -webkit-linear-gradient(top, rgb(253,253,253), rgb(190,190,190));
+	background: -ms-linear-gradient(top, rgb(253,253,253), rgb(190,190,190));
+	background: -o-linear-gradient(top, rgb(253,253,253), rgb(190,190,190));
+	background: linear-gradient(top, rgb(253,253,253), rgb(190,190,190));
+	border: 1px solid rgb(160,160,160);
+	cursor: pointer;
+}
+

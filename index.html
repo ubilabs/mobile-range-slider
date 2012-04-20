@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>MobileRangeSlider - Touch slider for Webkit / Mobile Safari</title>
+
+<!-- Mobile Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- iOS Full Screen -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- iOS Status Bar Style (default, black, black-translucent) -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="MobileRangeSlider.css" />
+
+<!-- Main JS -->
+<script type="text/javascript" src="MobileRangeSlider.js"></script>
+
+</head>
+<body>
+
+<div style="padding:30px">
+
+    <div id="slider1" class="slider">
+
+    	<div class="track"></div>
+    	<div class="knob" role="slider"></div>
+
+    </div>
+</div>
+
+<p><span id="slider1-output">0</span></p>
+
+<div id="slider2" class="slider">
+
+	<div class="track"></div>
+	<div class="knob" role="slider"></div>
+
+</div>
+
+<p><span id="slider2-output">0</span></p>
+
+<script type="text/javascript">
+
+
+var output1 = document.getElementById('slider1-output');
+
+//slider 1
+var mySlider1 = new MobileRangeSlider('slider1', {
+  value: 1,
+  min: 1,
+  max: 100,
+  callback: function (percentage) {
+   output1.innerHTML = percentage;
+   console.log("mySlider1", percentage);
+  }
+});
+
+
+var output2 = document.getElementById('slider2-output');
+//slider 2
+var mySlider2 = new MobileRangeSlider('slider2', {
+  value: 5,
+  min: 5,
+  max: 500,
+  callback: function(value){
+    output2.innerHTML = value;
+    console.log("mySlider2", value);
+  }
+});
+
+
+
+
+</script>
+
+</body>
+</html>
