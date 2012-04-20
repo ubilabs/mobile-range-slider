@@ -1,5 +1,6 @@
 /*
- * 
+ * This is a total rewrite of this plugin, done by Ubilabs GmbH
+ *
  * Find more about this plugin by visiting
  * http://miniapps.co.uk/
  *
