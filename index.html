@@ -35,22 +35,22 @@
       value: 50,
       min: 1,
       max: 100,
-      callback: function(percentage) {
-       input1.value = percentage;
+      change: function(percentage) {
+        input1.value = percentage;
       }
     });
 
     var slider2 = new MobileRangeSlider('slider2', {
       min: -10,
       max: 10,
-      callback: function(value){
+      change: function(value){
         input2.value = value;
       }
     });
     
-    input1.addEventListener("change", function(){
+    input1.addEventListener('change', function(){
       slider1.setValue(input1.value);
-    })
+    });
     
   </script>
 

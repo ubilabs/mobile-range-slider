@@ -99,7 +99,7 @@ if (!Function.prototype.bind) {
     value: 0, // initial value
     min: 0, // minimum value
     max: 100, // maximum value
-    callback: null // change callback
+    change: null // change callback
   };
 
   // add event handlers for a given name
@@ -212,8 +212,8 @@ if (!Function.prototype.bind) {
 
   // call callback with new value
   MobileRangeSlider.prototype.callback = function(value) { 
-    if (this.options.callback){
-      this.options.callback(value);
+    if (this.options.change){
+      this.options.change(value);
     }
   };
 
