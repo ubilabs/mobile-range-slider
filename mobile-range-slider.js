@@ -4,9 +4,10 @@
  *
  * https://github.com/ubilabs/mobile-range-slider
  *
- * Released under MIT license 
- * http://miniapps.co.uk/license/
- * 2012 Ubilabs, http://ubilabs.net
+ * Full rewrite of https://github.com/alexgibson/WKSlider
+ *
+ * @author Ubilabs http://ubilabs.net, 2012
+ * @license MIT License http://www.opensource.org/licenses/mit-license.php
  */
 
 // function.bind() polyfill
