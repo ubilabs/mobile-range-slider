@@ -6,8 +6,15 @@ This lightweight JavaScript range slider works on mobile devices such as iOS or 
 ### Basic Usage
 
 ```js
-new MobileRangeSlider('slider'); // passing an ID
+new MobileRangeSlider('my_slider'); // passing an ID
 new MobileRangeSlider(element); // passing a DOM element
+```
+
+````html
+<div id="my_slider" class="slider">
+  <div class="track"></div>
+  <div class="knob"></div>
+</div>
 ```
 
 ### Advanced Usage
@@ -29,9 +36,9 @@ slider.setValue(25);
 
 ### Options
 
+* `value` - initial value. Defaul: 0
 * `min` - minimum value. Default: 0
 * `max` - maximum value. Default: 100
-* `value` - initial value. Defaul: 0
 * `change` - callback handler
 
 ---
